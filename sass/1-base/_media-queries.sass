@@ -1,0 +1,14 @@
+@use 'variables'
+@use 'sass:map'
+
+@mixin mobile
+    @media (min-width: map-get(variables.$responsive, "mobile"))
+        @content
+
+@mixin tablet
+    @media (min-width: map-get(variables.$responsive, "tablet"))
+        @content
+    
+@mixin desktop 
+    @media (min-width: map-get(variables.$responsive, "desktop")) 
+        @content

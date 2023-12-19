@@ -1,0 +1,75 @@
+/* General */
+html {
+  font-size: 14px;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  color: #84e6fe;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #84e6fe;
+}
+
+/* Utilities */
+.primary-color {
+  color: #84e6fe;
+}
+
+.secondary-color {
+  color: #C2C2C2;
+}
+
+.light-color {
+  color: #FFFFFF;
+}
+
+.dark-color {
+  color: #1F1F1F;
+}
+
+.primary-bg-color {
+  background-color: #F5F5F5;
+}
+
+.secondary-bg-color {
+  background-color: #445976;
+}
+
+/*# sourceMappingURL=app.css.map */

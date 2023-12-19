@@ -1,0 +1,34 @@
+@use 'variables'
+@use 'sass:map'
+    
+/* General
+html
+    font-size: 14px
+
+*
+    font-family: variables.$font-family
+    font-weight: map-get(variables.$font-weights, "regular")
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+ 
+body
+    background-color: variables.$primary-bg-color   
+
+a
+    text-decoration: none
+    transition: .3s
+
+    &:hover
+        color: variables.$primary-color
+
+li
+    list-style: none
+
+button
+    transition: .5s
+    cursor: pointer
+
+input 
+    border: none
+    outline: none
