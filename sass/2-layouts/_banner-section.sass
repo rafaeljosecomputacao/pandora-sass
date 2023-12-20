@@ -1,0 +1,20 @@
+@use '../1-base/variables'
+@use '../1-base/media-queries'
+@use 'sass:map'
+
+/* Banner Section
+.banners
+    display: flex
+    align-items: center
+    flex-direction: column
+    padding: map-get(variables.$spacings, "small") map-get(variables.$spacings, "small") 0 
+
+    @include media-queries.tablet
+        flex-direction: row
+        justify-content: space-between
+        padding: map-get(variables.$spacings, "medium")
+    
+    @include media-queries.desktop
+        max-width: 1170px
+        margin: 0 auto
+        padding: map-get(variables.$spacings, "large") 0

@@ -12,15 +12,12 @@ html {
 }
 
 body {
-  background-color: #F5F5F5;
+  background-color: #EDEDFD;
 }
 
 a {
   text-decoration: none;
   transition: 0.3s;
-}
-a:hover {
-  color: #84e6fe;
 }
 
 li {
@@ -39,17 +36,39 @@ input {
 
 ::-webkit-scrollbar {
   width: 8px;
-  background-color: #F5F5F5;
+  background-color: #EDEDFD;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: #84e6fe;
+  background-color: #5e5eea;
+}
+
+/* Banner Section */
+.banners {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem 0.5rem 0;
+}
+@media (min-width: 768px) {
+  .banners {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .banners {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
 }
 
 /* Utilities */
 .primary-color {
-  color: #84e6fe;
+  color: #5e5eea;
 }
 
 .secondary-color {
@@ -61,15 +80,92 @@ input {
 }
 
 .dark-color {
-  color: #1F1F1F;
+  color: #292929;
 }
 
-.primary-bg-color {
-  background-color: #F5F5F5;
+/* Banner */
+.banner {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 0.5rem;
+  position: relative;
+  color: #FFFFFF;
+  transition: 0.5s;
+  background-position: center;
+  background-size: cover;
+  background-size: 100%;
+}
+@media (min-width: 768px) {
+  .banner {
+    margin-bottom: 0;
+    width: 32%;
+  }
+}
+@media (min-width: 1024px) {
+  .banner {
+    height: 250px;
+  }
+}
+.banner:hover {
+  background-size: 110%;
+}
+.banner-cover {
+  background-color: #5e5eea;
+  width: 70%;
+  height: 100%;
+  opacity: 0.8;
+  border-bottom-right-radius: 6rem;
+}
+@media (min-width: 768px) {
+  .banner-cover {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .banner-cover {
+    width: 70%;
+  }
+}
+.banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .banner-content {
+    padding: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .banner-content {
+    padding: 3rem;
+  }
+}
+.banner h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  max-width: 70%;
+}
+.banner a {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+.banner i {
+  color: #FFFFFF;
+  margin-left: 0.5rem;
 }
 
-.secondary-bg-color {
-  background-color: #445976;
+#banner-1 {
+  background-image: url("../../img/banner-1.jpg");
+}
+
+#banner-2 {
+  background-image: url("../../img/banner-2.jpg");
+}
+
+#banner-3 {
+  background-image: url("../../img/banner-3.jpg");
 }
 
 /*# sourceMappingURL=app.css.map */
