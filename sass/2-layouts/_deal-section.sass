@@ -1,0 +1,61 @@
+@use '../1-base/variables'
+@use '../1-base/media-queries'
+@use '../3-modules/modules-mixins'
+@use 'sass:map'
+
+/* Deal Section
+.deal-container
+    @include modules-mixins.div-center
+    flex-direction: column
+    background-color: variables.$dark-color
+    color: variables.$light-color
+    padding: map-get(variables.$spacings, "large") map-get(variables.$spacings, "small")
+
+    @include media-queries.desktop
+        flex-direction: row
+        justify-content: space-around
+        padding: 4rem 0
+
+    &-content
+        text-align: center
+        margin-bottom: map-get(variables.$spacings, "large")
+
+        @include media-queries.desktop
+            margin-bottom: 0
+
+        &-timer
+            display: flex
+            flex-wrap: wrap
+            align-self: center
+            justify-content: center
+
+        .deal-container-timer
+            width: 100px
+            height: 100px
+            border-radius: 50%
+            @include modules-mixins.div-center
+            flex-direction: column
+            background-color: variables.$primary-color
+            margin: 0 map-get(variables.$spacings, "medium") map-get(variables.$spacings, "large")
+
+            &-time
+                font-size: 1.5rem
+                font-weight: map-get(variables.$font-weights, "bold")
+
+            &-word
+                font-weight: map-get(variables.$font-weights, "light")            
+
+        &-title, &-subtitle
+            margin-bottom: map-get(variables.$spacings, "large")
+
+        &-title
+            font-size: map-get(variables.$font-sizes, "title")
+
+        &-subtitle
+            font-size: 1.5rem         
+    
+    &-image 
+
+        img
+            width: 250px
+            height: 250px

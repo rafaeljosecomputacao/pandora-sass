@@ -66,6 +66,74 @@ input {
   }
 }
 
+.btn {
+  border: 2px solid #5e5eea;
+}
+
+/* Deal Section */
+.deal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #292929;
+  color: #FFFFFF;
+  padding: 2rem 0.5rem;
+}
+@media (min-width: 1024px) {
+  .deal-container {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 4rem 0;
+  }
+}
+.deal-container-content {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media (min-width: 1024px) {
+  .deal-container-content {
+    margin-bottom: 0;
+  }
+}
+.deal-container-content-timer {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: center;
+}
+.deal-container-content .deal-container-timer {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #5e5eea;
+  margin: 0 1rem 2rem;
+}
+.deal-container-content .deal-container-timer-time {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.deal-container-content .deal-container-timer-word {
+  font-weight: 300;
+}
+.deal-container-content-title, .deal-container-content-subtitle {
+  margin-bottom: 2rem;
+}
+.deal-container-content-title {
+  font-size: 2rem;
+}
+.deal-container-content-subtitle {
+  font-size: 1.5rem;
+}
+.deal-container-image img {
+  width: 250px;
+  height: 250px;
+}
+
 /* Utilities */
 .primary-color {
   color: #5e5eea;
@@ -166,6 +234,33 @@ input {
 
 #banner-3 {
   background-image: url("../../img/banner-3.jpg");
+}
+
+/* Buttons */
+.btn {
+  background-color: #FFFFFF;
+  color: #5e5eea;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.btn:hover {
+  background-color: #5e5eea;
+  color: #FFFFFF;
+}
+.btn-primary {
+  background-color: #5e5eea;
+  color: #FFFFFF;
+}
+.btn-primary:hover {
+  background-color: #FFFFFF;
+  color: #5e5eea;
 }
 
 /*# sourceMappingURL=app.css.map */
