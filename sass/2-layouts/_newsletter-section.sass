@@ -1,0 +1,60 @@
+@use '../1-base/variables'
+@use '../1-base/media-queries'
+@use '../3-modules/modules-mixins'
+@use 'sass:map'
+
+/* Newsletter Section
+.newsletter-container
+    @include modules-mixins.div-center
+    flex-direction: column
+    text-align: center
+    padding: map.get(variables.$spacings, "large") map.get(variables.$spacings, "small")
+    border-top: 2px solid variables.$primary-color
+
+    @include media-queries.tablet
+        padding: map.get(variables.$spacings, "large") map.get(variables.$spacings, "medium")
+    
+    @include media-queries.desktop
+        padding: map.get(variables.$spacings, "large") 0
+
+    h2, span
+        font-size: map.get(variables.$font-sizes, "title")
+        font-weight: map.get(variables.$font-weights, "bold")
+        margin-bottom: map.get(variables.$spacings, "large")
+
+    form
+        display: flex
+        width: 100%
+        margin-bottom: 3.2rem
+
+        @include media-queries.desktop
+            width: 60%
+
+        input[type="email"]
+            width: 100%
+            @extend %border
+            @include modules-mixins.rounded-input
+            background-color: variables.$light-color
+            color: variables.$dark-color
+            font-size: map.get(variables.$font-sizes, "input")
+            font-weight: map.get(variables.$font-weights, "light")
+
+            &::placeholder
+                color: variables.$secondary-color
+
+    .social-media
+        margin-bottom: map.get(variables.$spacings, "medium")
+
+        i
+            background-color: variables.$light-color
+            color: variables.$primary-color
+            font-size: 1.5rem
+            @extend %border
+            padding: map.get(variables.$spacings, "small")
+            margin: map.get(variables.$spacings, "small")        
+            cursor: pointer       
+            transition: .3s
+
+            &:hover
+                background-color: variables.$primary-color
+                color: variables.$light-color              
