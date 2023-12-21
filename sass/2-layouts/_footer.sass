@@ -1,0 +1,80 @@
+@use '../1-base/variables'
+@use '../1-base/media-queries'
+@use '../3-modules/modules-mixins'
+@use 'sass:map'
+
+/* Footer
+.footer
+    @include modules-mixins.div-center
+    flex-direction: column
+    text-align: center
+    background-color: variables.$dark-color
+    padding: map-get(variables.$spacings, "large") map-get(variables.$spacings, "small")
+
+    @include media-queries.tablet
+        padding: map-get(variables.$spacings, "large") map-get(variables.$spacings, "medium")
+    
+    @include media-queries.desktop       
+        padding: map-get(variables.$spacings, "large") 100px
+
+    a
+        color: variables.$light-color
+
+    li
+        margin-bottom: map-get(variables.$spacings, "small")
+
+        a
+            color: variables.$secondary-color
+
+            &:hover
+                color: variables.$primary-color
+
+    i
+        color: variables.$primary-color
+        font-size: 1.2rem
+        margin-right: map-get(variables.$spacings, "small")
+
+    h3
+        color: variables.$primary-color
+        font-size: 1.4rem
+        margin-bottom: map-get(variables.$spacings, "medium")
+
+    &-top
+        padding: 0 0 21px
+
+        @include media-queries.desktop
+            padding: 0
+            display: flex
+            justify-content: space-between
+
+        &-about, &-categories, &-information
+            margin-bottom: map-get(variables.$spacings, "medium")
+
+            @include media-queries.desktop
+                margin-bottom: 0
+
+        &-about, &-categories, &-information, &-menu 
+
+            @include media-queries.desktop
+                text-align: left
+
+        &-about
+
+            @include media-queries.desktop
+                max-width: 50%
+
+            h3, p
+                color: variables.$light-color
+            
+            h3
+                font-size: map-get(variables.$font-sizes, "title")
+
+            p
+                margin-bottom: map-get(variables.$spacings, "medium")
+
+    &-bottom
+        font-size: .9rem
+        font-weight: map-get(variables.$font-weights, "light")
+
+        @include media-queries.desktop
+            margin-top: map-get(variables.$spacings, "medium")
