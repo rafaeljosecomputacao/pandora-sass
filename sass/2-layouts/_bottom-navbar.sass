@@ -1,0 +1,66 @@
+@use '../1-base/variables'
+@use '../1-base/media-queries'
+@use 'sass:map'
+    
+/* Bottom Navbar
+.bottom-navbar
+    background-color: variables.$background-color
+    border-bottom: 2px solid variables.$primary-color
+    display: flex
+    flex-direction: column
+    padding: map-get(variables.$spacings, "medium")
+
+    @include media-queries.desktop
+        flex-direction: row 
+        padding: map-get(variables.$spacings, "medium") 100px
+    
+    &-brand 
+
+        @include media-queries.desktop
+            margin-right: map-get(variables.$spacings, "large")
+
+        p
+            color: variables.$primary-color      
+    
+    &-items 
+        display: none
+
+        @include media-queries.desktop
+            display: flex
+
+            ul
+                display: flex
+                align-items: center
+                flex-direction: row
+
+    &-item 
+        padding: map-get(variables.$spacings, "small") 0
+
+        @include media-queries.desktop
+            padding: 0 map-get(variables.$spacings, "large")
+
+        a
+            color: variables.$dark-color
+
+            &:hover
+                color: variables.$primary-color 
+
+    &-toggle
+        display: initial
+        align-self: flex-end      
+        position: absolute
+        top: 10px
+
+        @include media-queries.desktop
+            display: none
+
+    &-icon 
+        background-color: transparent
+        border: none     
+
+        i
+            color: variables.$card-price 
+            font-size: 20px          
+    
+    .open 
+        display: block
