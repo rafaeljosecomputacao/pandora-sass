@@ -1,0 +1,116 @@
+@use '../1-base/variables'
+@use '../1-base/media-queries'
+@use '../3-modules/modules-mixins'
+@use 'sass:map'
+
+/* Header
+.top-header
+    display: none
+
+    @include media-queries.desktop
+        display: block
+        background-color: variables.$dark-color
+        color: variables.$secondary-color
+
+    &-container
+        display: flex
+        justify-content: space-between
+        padding: map-get(variables.$spacings, "medium") 100px
+
+        i
+            color: variables.$primary-color
+            font-size: 1.1rem
+            margin-right: map-get(variables.$spacings, "small")
+
+        a
+            color: variables.$secondary-color
+
+    &-info 
+        
+        span
+            margin-right: map-get(variables.$spacings, "large")
+    
+    &-user 
+        
+        span
+            margin-left: map-get(variables.$spacings, "large")
+
+.main-header
+    background-color: variables.$dark-color
+
+    &-container
+        display: flex
+        align-items: center
+        flex-direction: column
+        padding: map-get(variables.$spacings, "medium") map-get(variables.$spacings, "small")
+
+        @include media-queries.tablet
+            padding: map-get(variables.$spacings, "medium")
+
+        @include media-queries.desktop
+            flex-direction: row
+            justify-content: space-between
+            padding: map-get(variables.$spacings, "medium") 100px map-get(variables.$spacings, "large")
+
+        a, span, i
+            color: variables.$light-color
+
+    &-brand
+        display: flex
+        align-items: center
+        font-size: map-get(variables.$font-sizes, "title") 
+        font-weight: map-get(variables.$font-weights, "bold")
+
+        @include media-queries.desktop
+            width: 25%
+
+        img
+            width: 2rem
+            height: 2rem
+            margin-left: map-get(variables.$spacings, "small")
+
+    &-form
+        @include modules-mixins.div-center
+        width: 100%
+        margin: map-get(variables.$spacings, "medium") 0
+
+        @include media-queries.desktop
+            width: 50%
+            margin: 0
+
+        input[type="text"]
+            width: 100%
+            @extend %border
+            @include modules-mixins.rounded-input
+            background-color: variables.$light-color
+            color: variables.$dark-color
+            font-size: map.get(variables.$font-sizes, "input")
+            font-weight: map.get(variables.$font-weights, "light")
+
+            &::placeholder
+                color: variables.$secondary-color
+
+    &-menu
+        width: 80%
+        display: flex
+        align-items: center
+        justify-content: space-around
+
+        @include media-queries.tablet
+            width: 60%
+        
+        @include media-queries.desktop
+            width: 25%
+            justify-content: end
+
+        span, i
+            margin-right: map-get(variables.$spacings, "small")
+
+        i
+            color: variables.$primary-color
+            font-size: 1.1rem
+    
+    &-cart 
+
+        @include media-queries.desktop
+            margin-left: map-get(variables.$spacings, "large")
